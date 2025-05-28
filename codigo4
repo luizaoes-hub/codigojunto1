@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alerta</title>
+<style>
+#meu-botao-alerta {
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <button id="meu-botao-alerta">Clique para Alerta</button>
+  <script>
+  document.getElementById("meu-botao-alerta").addEventListener("click", function() {
+    alert("Você clicou no botão!");
+  });
+  </script>
+</body>
+</html>
