@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contador</title>
+<style>
+#contador {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+#botao-incrementar {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+  <div id="contador">0</div>
+  <button id="botao-incrementar">Incrementar</button>
+  <script>
+  let contador = 0;
+  const contadorElemento = document.getElementById("contador");
+  const botaoIncrementar = document.getElementById("botao-incrementar");
+
+  botaoIncrementar.addEventListener("click", function() {
+    contador++;
+    contadorElemento.textContent = contador;
+  });
+  </script>
+</body>
+</html>
